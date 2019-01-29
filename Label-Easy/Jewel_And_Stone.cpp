@@ -1,3 +1,7 @@
+//
+// Created by zhangpx on 19-1-29.
+//
+
 #include <iostream>
 #include <vector>
 #include <string>
@@ -17,21 +21,6 @@ public:
             }
         }
         return count;
-    }
+     }
 };
 
-
-int main() {
-    cout << "Hello, World!" << endl;
-
-    string J = "aA";
-    string S = "aAAbbbb";
-
-    Solution solution;
-    int count = solution.numJewelsInStones(J,S);
-
-    cout << count << endl;
-
-    return 0;
-
-}
