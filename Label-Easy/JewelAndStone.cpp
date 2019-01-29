@@ -93,7 +93,10 @@ public:
     }
 };
 
-
+//来自leetcode/algorithms/cpp/jewelsAndStones/JewelsAndStones.cpp的一种方法
+//map 是STL中的一种容器，表示映射，有点像字典，这里的解法就是相当于给珠宝建立一个映射表，x->y，
+//y位True或者False，x用字符的ASCII表示，map预留了256位，虽然填不满但是不影响使用
+// for(auto c:J) 跟python的 for c in J 类似，注意如果是&c的话，对&c进行修改会影响J的值
 class Solution_3 {
 public:
     int numJewelsInStones(string J, string S) {
